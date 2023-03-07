@@ -5,7 +5,6 @@
 #include<iostream>
 using namespace std;
 
-
 //setting the hypothesisH0 for X-Sig[0]+Del[1] 
 
 int setH0(double number_H0){
@@ -17,9 +16,7 @@ else
 return 1;
 }
 
-
 //setting the hypothesisH1 for X-Sig+Del
-
 int setH1(double number_H1){
 
 if(number_H1<0.35) //making sigmas less probable
@@ -54,9 +51,7 @@ else if(0.255555<mynumb && mynumb<=0.78888)
 else
 
         return 3; //3isgamma
-
 }
-
 
 //main function
 void doDecays(int numRuns){
@@ -77,7 +72,6 @@ int SigResult_H0=0, SigResult_H1=0;
 int DelResult_H0=0, DelResult_H1=0;
 //loops starts for x->sig/Del
 for (int i=0; i<=numRuns; i++){
-
 
 	 num = rnd->Rndm(i);
   //cout<<num<<endl;
@@ -123,6 +117,5 @@ for(int j=0; j<=numRuns; j++){
 
 xdecay_H0.close();//files closed
 xdecay_H1.close();
-
 
 }
