@@ -7,3 +7,5 @@ The analysis part is be done using the program ```DecayAnalysis2.C```. It will a
 
 ## How to Run the Programs?
 I have been using [ C++](https://learn.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-170) and [ROOT](https://root.cern/install/) to develop these programs. In case you are missing the root in your system, you can install from here [https://root.cern/install/]. We can run these programs using [ROOT] *macro* as simply put these commands in your [ROOT] terminal type root[0] **`.x doDecays.C(10000)`** and type root[0] **`.x DecayAnalysis2.C(1000)`**
+## Short Comings
+This program can not handle the number of runs/experiments and the limits for the number of events in each run. 
